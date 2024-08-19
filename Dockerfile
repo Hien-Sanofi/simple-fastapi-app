@@ -3,7 +3,7 @@ FROM python:3.12.5-slim-bullseye
 WORKDIR /app
 
 COPY requirements.txt /app/requirements.txt
-RUN pip install -r requirements.txt -U --trusted-host pypi.org --trusted-host pypi.python.org --trusted-host files.pythonhosted.org
+RUN pip install -r requirements.txt -U
 
 COPY main.py /app/main.py
 
