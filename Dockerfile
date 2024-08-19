@@ -7,6 +7,6 @@ RUN pip install -r requirements.txt -U --trusted-host pypi.org --trusted-host py
 
 COPY main.py /app/main.py
 
-EXPOSE 80
+EXPOSE 8080
 
-CMD [ "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80" ]
+CMD [ "uvicorn", "main:app", "--host", "0.0.0.0", "--port", "8080" ]
